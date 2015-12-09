@@ -197,7 +197,7 @@ describe('Route', () => {
 
       context('with pageCacheTimeout option', () => {
         it('should cache the page the mentioned timeout', done => {
-          const router = {pageCacheTimeout: true};
+          const router = {pageCacheTimeout: 100};
           const route = new Route(router);
           const req = {url: '/aaa/aa.html'};
           const frData = {aa: 10};
